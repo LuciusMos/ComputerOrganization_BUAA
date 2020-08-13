@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string2_tb_isim_beh.exe" -prj "C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string2_tb_beh.prj" "work.string2_tb" "work.glbl" 

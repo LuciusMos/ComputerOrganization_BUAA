@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/lenovo/Desktop/Computer Organization/ISE/P4/P4_Verilog/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lenovo/Desktop/Computer Organization/ISE/P4/P4_Verilog/xst"
+elaborate
+-ifn ALU.prj
+-ifmt mixed

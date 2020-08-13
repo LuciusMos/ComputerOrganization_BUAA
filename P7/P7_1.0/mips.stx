@@ -1,0 +1,77 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P7/P7_1.0/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P7/P7_1.0/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "XALU.v" in library work
+Compiling verilog file "W_pipereg.v" in library work
+Module <XALU> compiled
+Compiling verilog file "RF.v" in library work
+Module <W_pipereg> compiled
+Compiling verilog file "PC.v" in library work
+Module <RF> compiled
+Compiling verilog file "NPC.v" in library work
+Module <PC> compiled
+Compiling verilog file "M_pipereg.v" in library work
+Module <NPC> compiled
+Compiling verilog file "LOAD.v" in library work
+Module <M_pipereg> compiled
+Compiling verilog file "IM.v" in library work
+Module <LOAD> compiled
+Compiling verilog file "E_pipereg.v" in library work
+Module <IM> compiled
+Compiling verilog file "EXT.v" in library work
+Module <E_pipereg> compiled
+Compiling verilog file "D_pipereg.v" in library work
+Module <EXT> compiled
+Compiling verilog file "DM.v" in library work
+Module <D_pipereg> compiled
+Compiling verilog file "CTRL.v" in library work
+Module <DM> compiled
+Compiling verilog file "CP0.v" in library work
+Module <CTRL> compiled
+Compiling verilog file "CMP.v" in library work
+Module <CP0> compiled
+Compiling verilog file "ALU.v" in library work
+Module <CMP> compiled
+Compiling verilog file "ADD4.v" in library work
+Module <ALU> compiled
+Compiling verilog file "TC0.v" in library work
+Module <ADD4> compiled
+Compiling verilog file "CPU.v" in library work
+Module <TC> compiled
+Compiling verilog file "BRIDGE.v" in library work
+Module <CPU> compiled
+Compiling verilog file "mips.v" in library work
+Module <BRIDGE> compiled
+Module <mips> compiled
+No errors in compilation
+Analysis of file <"mips.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> 
+
+Total memory usage is 4513728 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

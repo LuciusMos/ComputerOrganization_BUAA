@@ -1,0 +1,20 @@
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string2_tb_isim_beh.exe -prj C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string2_tb_beh.prj work.string2_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string2_tb.v" into library work
+Analyzing Verilog file "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module string2
+Compiling module string2_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\string2_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/lenovo/Desktop/Computer Organization/ISE/P1/splitter/string2_tb_isim_beh.exe
+Fuse Memory Usage: 26848 KB
+Fuse CPU Usage: 702 ms

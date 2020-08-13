@@ -1,0 +1,59 @@
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips_tb_isim_beh.exe -prj C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips_tb_beh.prj work.mips_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/W_pipereg.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/RF.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/PC.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/NPC.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/M_pipereg.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/LOAD.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/IM.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/E_pipereg.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/EXT.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/D_pipereg.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/DM.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/CTRL.v" into library work
+WARNING:HDLCompiler:327 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/CTRL.v" Line 217: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/CTRL.v" Line 223: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/CMP.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/ALU.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/ADD4.v" into library work
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips.v" into library work
+WARNING:HDLCompiler:35 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips.v" Line 369: <MFRSDOut> is already implicitly declared earlier.
+Analyzing Verilog file "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips_tb.v" into library work
+Analyzing Verilog file "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips.v" Line 65: Port ALUSrc1 is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips.v" Line 144: Port MemWr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips.v" Line 199: Port ALUSrc1 is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips.v" Line 249: Port ALUSrc1 is not connected to this instance
+WARNING:HDLCompiler:327 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/CTRL.v" Line 217: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/CTRL.v" Line 223: Concatenation with unsized literal; will interpret as 32 bits
+Completed static elaboration
+Compiling module PC
+Compiling module ADD4
+Compiling module IM
+Compiling module D_pipereg
+Compiling module CTRL
+Compiling module RF
+Compiling module EXT
+Compiling module CMP
+Compiling module NPC
+Compiling module E_pipereg
+Compiling module ALU
+Compiling module M_pipereg
+Compiling module DM
+Compiling module W_pipereg
+Compiling module LOAD
+Compiling module mips
+Compiling module mips_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\mips_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 18 Verilog Units
+Built simulation executable C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P5/P5.5/mips_tb_isim_beh.exe
+Fuse Memory Usage: 32240 KB
+Fuse CPU Usage: 1781 ms

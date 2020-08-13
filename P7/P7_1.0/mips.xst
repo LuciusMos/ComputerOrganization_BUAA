@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P7/P7_1.0/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lenovo/Desktop/study/Computer Organization/ISE/P7/P7_1.0/xst"
+elaborate
+-ifn mips.prj
+-ifmt mixed

@@ -1,0 +1,162 @@
+##############stall test###############
+		ori	$1,$0,0x1234	#B-RS-R-D
+		addu	$2,$1,$0
+		beq	$2,$1,loop1
+		nop
+		addu	$1,$1,$1
+loop1:	sw	$2,0($0)	
+
+		ori	$1,$0,0x5678	#B-RT-I-D
+		ori	$2,$1,0
+		beq	$1,$2,loop2
+		nop
+		addu	$1,$1,$1
+loop2:	sw	$2,4($0)
+
+		lw	$1,0($0)		#B-RS-L-D
+		lw	$2,0($0)
+		beq	$2,$1,loop3
+		nop
+		addu	$1,$1,$1
+loop3:	sw	$2,8($0)
+
+		lw	$1,4($0)		#B-RT-L-M
+		lw	$2,4($0)
+		beq	$1,$2,loop4
+		nop
+		addu	$1,$1,$1
+loop4:	sw	$2,12($0)	
+
+		ori	$1,$0,0			#R-RS-L-D
+		lw	$1,0($0)
+		addu	$2,$1,$0
+		
+		lw	$0,4($0)		#I-RS-L-D zero
+		lui	$1,100
+		
+		lw	$1,4($0)		#I-RS-L-D 
+		ori	$2,$1,0
+		
+		ori	$1,$0,8			#L-RS-L-D
+		sw	$1,8($0)
+		lw	$2,8($0)
+		lw	$1,0($2)
+		
+		addu	$1,$1,$2		#S-RS-L-D
+		sw	$1,16($0)
+		lw	$2,16($0)
+		sw	$2,0($2)
+		
+		jal	loop5		#JR-RS-L-D
+		nop
+loop5:	ori	$1,$0,20
+		addu	$1,$31,$1
+		sw	$1,8($0)
+		lw	$2,8($0)
+		jr	$2
+		nop
+		
+		jal	loop6		#JR-RS-R-D
+		nop
+loop6:	ori	$1,$0,12
+		addu	$1,$31,$1
+		jr	$1
+		nop
+		
+		jal	loop7		#JR-RS-I-D
+		nop
+loop7:	ori	$1,$0,16
+		addu	$1,$31,$1
+		ori	$2,$1,0
+		jr	$2
+		nop
+		
+		jal	loop8		#JR-RS-L-M
+		nop
+loop8:	ori	$1,$0,24
+		addu	$1,$31,$1
+		sw	$1,8($0)
+		lw	$2,8($0)
+		nop
+		jr	$2
+		nop
+		
+		jal	loop9		#JALR-RS-R-D
+		nop
+loop9:	ori	$1,$0,12
+		addu	$1,$31,$1
+		jalr	$2,$1
+		nop
+			
+		ori	$1,$0,16		#JALR-RS-I-D	
+		addu	$2,$2,$1
+		ori	$1,$2,0
+		jalr	$2,$1
+		nop
+		
+		ori	$1,$0,20		#JR-RS-L-D
+		addu	$2,$2,$1
+		sw	$2,8($0)
+		lw	$1,8($0)
+		jalr	$2,$1
+		nop
+		
+		ori	$1,$0,24		#JR-RS-L-M
+		addu	$2,$2,$1
+		sw	$2,8($0)
+		lw	$1,8($0)
+		nop
+		jalr	$2,$1
+		nop
+
+#########zero bubble###################
+		ori	$1,$0,0x1234	#B-RS-R-D
+		addu	$zero,$1,$0
+		beq	$zero,$zero,loop10
+		nop
+		addu	$1,$1,$1
+loop10:	sw	$2,0($0)	
+
+		ori	$1,$0,0x5678	#B-RT-I-D
+		ori	$2,$0,0
+		ori	$zero,$1,0
+		beq	$zero,$2,loop11
+		nop
+		addu	$1,$1,$1
+loop11:	sw	$2,4($0)
+
+		ori	$1,$0,0			#B-RS-L-D
+		lw	$zero,0($0)
+		beq	$zero,$1,loop12
+		nop
+		addu	$1,$1,$1
+loop12:	sw	$2,8($0)
+
+		ori	$1,$0,0
+		lw	$zero,4($0)		#B-RT-L-M
+		beq	$1,$zero,loop13
+		nop
+		addu	$1,$1,$1
+loop13:	sw	$2,12($0)	
+
+		ori	$1,$0,0			#R-RS-L-D
+		lw	$zero,0($0)
+		addu	$2,$zero,$zero
+		
+		lw	$0,4($0)		#I-RS-L-D zero
+		lui	$1,100
+		
+		lw	$zero,4($0)		#I-RS-L-D 
+		ori	$2,$zero,0
+		
+		ori	$zero,$0,8			#L-RS-L-D
+		sw	$zero,8($0)
+		lw	$zero,8($0)
+		lw	$zero,0($zero)
+		
+		addu	$zero,$1,$2		#S-RS-L-D
+		sw	$zero,16($0)
+		lw	$zero,16($0)
+		sw	$zero,0($zero)
+
+		

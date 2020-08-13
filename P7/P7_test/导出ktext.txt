@@ -1,0 +1,1 @@
+java -jar C:\Users\lenovo\Desktop\Mars2018.jar a db mc CompactDataAtZero dump 0x00004180-0x00004ffc HexText C:\Users\lenovo\Desktop\study\ComputerOrganization\ISE\P7\P7_1.0\code_handler.txt C:\Users\lenovo\Desktop\study\ComputerOrganization\ISE\P7\P7_test\handler.asm

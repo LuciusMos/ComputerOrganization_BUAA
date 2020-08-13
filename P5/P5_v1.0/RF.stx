@@ -1,0 +1,42 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/lenovo/Desktop/Computer Organization/ISE/P5/P5_v1.0/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/lenovo/Desktop/Computer Organization/ISE/P5/P5_v1.0/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "RF.v" in library work
+ERROR:HDLCompilers:26 - "RF.v" line 22 expecting ')', found '@'
+ERROR:HDLCompilers:28 - "RF.v" line 39 'R1' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 40 'R2' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 42 'clk' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 43 'reset' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 46 'RegWr' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 46 'MUX_RF_A3Out' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 47 'MUX_RF_A3Out' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 47 'MUX_RF_WDOut' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 48 'PC' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 48 'MUX_RF_A3Out' has not been declared
+ERROR:HDLCompilers:28 - "RF.v" line 48 'MUX_RF_WDOut' has not been declared
+Module <RF> compiled
+Analysis of file <"RF.prj"> failed.
+--> 
+
+Total memory usage is 4505424 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
